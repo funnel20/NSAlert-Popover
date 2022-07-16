@@ -90,12 +90,8 @@ static NSAlert *currentlyOpenedAlert;
 	currentlyOpenedPopover = nil;
 	
 	// Check for previously shown Popover Alerts
-	[self checkForPreviouslyShownAlerts];
-}
-
-- (void) checkForPreviouslyShownAlerts {
-	// If previously opened alerts are referenced, open the last one.
 	if (previouslyOpenedAlerts && previouslyOpenedAlerts.count>0) {
+		// If previously opened alerts are referenced, open the last one.
 		NSAlert *alert = [previouslyOpenedAlerts lastObject];
 		[previouslyOpenedAlerts removeObject:alert];
 		[alert runAsPopoverForView:alert.targetView withCompletionBlock:alert.completionBlock];
