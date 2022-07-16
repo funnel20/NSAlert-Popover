@@ -29,7 +29,7 @@ typedef void (^NSAlertCompletionBlock)(NSInteger result);
  */
 - (void) runAsPopoverForView:(NSView *)aView preferredEdge:(NSRectEdge)preferredEdge withCompletionBlock:(NSAlertCompletionBlock)aBlock;
 
-/** Convenient method that uses NSYMaxEdge as preferred edge.
+/** Convenient method that uses NSMaxYEdge as preferred edge.
  */
 - (void) runAsPopoverForView:(NSView *)aView withCompletionBlock:(NSAlertCompletionBlock)aBlock;
 
