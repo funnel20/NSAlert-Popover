@@ -57,7 +57,7 @@ static NSAlert *currentlyOpenedAlert;
 	}
 	
 	// Open the alert within the popover and mark it as the currently shown one.
-	[popover showRelativeToRect:view.bounds ofView:view preferredEdge:NSMaxYEdge];
+	[popover showRelativeToRect:view.bounds ofView:view preferredEdge:preferredEdge];
 	currentlyOpenedPopover = popover;
 	currentlyOpenedAlert = self;
 }
